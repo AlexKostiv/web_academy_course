@@ -1,0 +1,23 @@
+
+.widget {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: auto;
+  border: 1px solid black;
+  &__bulb {
+  display: block;
+  margin: 10px auto;
+  width: 10em;
+  height: 10em;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  }
+  &__bulb-button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 20px;
+  border-radius:5px;
+  }
+}

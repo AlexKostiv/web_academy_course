@@ -1,0 +1,23 @@
+.btn {
+  padding: 20px;
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(0,0,0, .4);
+  &_default {
+    background: grey;
+  }
+  &_success {
+    background: greenyellow;
+  }
+  &_active {
+    background: red;
+  }
+}
+
+.greet-widget {
+  &__title {
+    display: none;
+    &_active {
+      display: inherit;
+    }
+  }
+}

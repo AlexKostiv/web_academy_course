@@ -1,0 +1,48 @@
+/*
+.traffic-light {
+  background-color: #21262f;
+  width: 140px;
+  border-radius:10px;
+  &__bulb {
+    display: block;
+    margin: 10px auto;
+    width: 110px;
+    height: 110px;
+    border: 4px solid rgba(74, 81, 76, 0.75);
+    border-radius: 50%;
+    &.green-active {
+      background-color: #21b031;
+    }
+    &.yellow-active {
+      background-color: #ffb615;
+    }
+    &.red-active {
+      background-color: red;
+    }
+  }
+}
+*/
+.traffic-light {
+  background-color: #21262f;
+  width: 140px;
+  border-radius: 10px;
+}
+.traffic-light__green, .traffic-light__yellow, .traffic-light__red {
+  display: block;
+  margin: 10px auto;
+  width: 110px;
+  height: 110px;
+  border: 4px solid rgba(74, 81, 76, 0.75);
+  border-radius: 50%;
+}
+.traffic-light__green.active {
+  background-color: #21b031;
+}
+.traffic-light__yellow.active {
+  background-color: #ffb615;
+}
+.traffic-light__red.active {
+  background-color: red;
+}
+
+/*# sourceMappingURL=hw_11.css.map */
