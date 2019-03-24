@@ -1,0 +1,22 @@
+.menu {
+  width: 200px;
+  margin: 0 auto;
+  &__btn {
+    width: 100%;
+    border: 1px solid #4c3bff;
+    border-radius: 15px;
+    background-color: #4c3bff;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+  }
+  &__category_list {
+    width: 90%;
+    background-color: rgba(0,0,0,.8);
+    height: 150px;
+    padding-left:0;
+    margin:-1px 10px 0 10px;
+
+  }
+}

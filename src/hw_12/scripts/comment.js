@@ -1,43 +1,4 @@
-/*
-import './comment.scss';
 
-export function comment(target = document.querySelector('body')) {
-	const root = document.createElement('div');
-	const form = document.createElement('form');
-	const input = document.createElement('input');
-	const ul = document.createElement('ul');
-
-	form.appendChild(input);
-
-	input.type = 'text';
-	input.placeholder = 'Enter task...';
-
-	root.classList.add('comment');
-	form.classList.add('comment__form');
-	input.classList.add('comment__input');
-
-	root.appendChild(form);
-	root.appendChild(ul);
-
-	form.addEventListener('submit', (eventObject) => {
-		eventObject.preventDefault();
-		console.log(eventObject);
-		renderCommentItem();
-	});
-
-	target.appendChild(root);
-
-	function renderCommentItem() {
-		const value = input.value;
-		const li = document.createElement('li');
-
-		li.classList.add('comment__item');
-		li.textContent = value;
-
-		ul.appendChild(li);
-		input.value = '';
-	}
-}*/
 import './comment.scss';
 
 export function comment(target = document.querySelector('body')) {

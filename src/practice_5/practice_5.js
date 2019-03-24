@@ -1,3 +1,3 @@
 import './scripts/light_switch';
-import './test.scss';
+import './practice_5.scss';
 
