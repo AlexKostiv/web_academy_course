@@ -1,0 +1,15 @@
+.btn {
+  width: 70px;
+  padding: 3px;
+  margin: 3px;
+  border: 1px solid #3498db;
+  font-size: 11px;
+  border-radius: 2px;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #39617a);
+  color: #ffffff;
+  &:hover {
+   background: #3cb0fd;
+   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  }
+}
