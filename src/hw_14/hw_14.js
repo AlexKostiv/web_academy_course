@@ -19,12 +19,3 @@ function dropDownMenu(target = document.querySelector('body')){
 
 }
 dropDownMenu();
-/*
-new SortingCategory(undefined, 'Name');
-new SortingCategory(undefined, 'Date');
-new SortingCategory(undefined, 'Price');
-new SortingCategory(undefined, 'Size');
-*/
-
-
-
