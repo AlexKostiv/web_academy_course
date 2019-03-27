@@ -1,4 +1,4 @@
-import './list.scss';
+
 
 export class List {
 	constructor(target = document.querySelector('body')){
