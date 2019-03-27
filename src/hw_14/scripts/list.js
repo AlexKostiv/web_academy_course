@@ -34,7 +34,7 @@ export class List {
 
 	fetchData(){ //робить запити на сервер
 		const xhr = new XMLHttpRequest();
-		xhr.open('GET', 'http://evening-dawn-11092.herokuapp.com/list');
+		xhr.open('GET', 'http://localhost:8080');
 		xhr.send();
 		const stateChangeHandler = () => {
 			if(xhr.readyState === 4){
