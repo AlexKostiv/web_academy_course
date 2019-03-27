@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+$padding: 12px;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  border: 1px solid green;
+  &__control {
+    border: none;
+    font-size: 1rem;
+    width:100%;
+    height: 30px;
+    background-color: #1426e1;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: $padding;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    &:after {
+      content: '>';
+      position: absolute;
+      right: $padding;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      transition: transform 200ms;
+    }
+
+  }
+  &__list {
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 30px;
+    left: $padding;
+    background: #04082c;
+    width: calc(100% - #{ 2 * $padding});
+    transform: scaleY(0);// елемент зникає
+    transform-origin: top;
+    transition: all 200ms;
+    padding-left: 0;
+  }
+  &__item > button {
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    padding: $padding;
+    color: #fff;
+  }
+  &_active {
+    .dropdown {
+      &__list {
+        transform: scaleY(1);
+      }
+      &__control {
+        &:after {
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+    }
+  }
+}

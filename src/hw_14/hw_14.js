@@ -1,21 +1,22 @@
 import './hw_14.scss';
-/*import { SortingCategory } from './scripts/sorting_category';*/
+import { DropDown } from './scripts/dropdown';
 
-function dropDownMenu(target = document.querySelector('body')){
-	const menu = document.createElement('div');
-	const button = document.createElement('button');
-	const list = document.createElement('ul');
+import { List } from './scripts/list';
 
-	menu.classList.add('menu');
-	button.classList.add('menu__btn');
-	list.classList.add('menu__category_list');
 
-	button.textContent = 'Sort by';
+const list1 = new List();
+const dropDown = new DropDown(document.querySelector('#dropDown'), [
 
-	menu.appendChild(button);
-	menu.appendChild(list);
-/*	list.appendChild(SortingCategory());*/
-	target.appendChild(menu);
-
-}
-dropDownMenu();
+	{
+		title: 'Name'
+	},
+	{
+		title: 'Date'
+	},
+	{
+		title: 'Price'
+	},
+	{
+		title: 'Size'
+	},
+], (option) => console.log('SELECTED OPTION', option));
