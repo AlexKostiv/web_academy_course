@@ -15,7 +15,6 @@ export function comment(target = document.querySelector('body')) {
 
 	inputUser.type = 'text';
 	inputUser.placeholder = 'Enter your name...';
-
 	textarea.placeholder = 'Enter your message...';
 
 	button.textContent = 'Add comment';

@@ -9,5 +9,6 @@ new Button(undefined, 'Lesson 13', () => location.href="/lesson_13.html");
 new Button(undefined, 'Lesson 14', () => location.href="/lesson_14.html");
 new Button(undefined, 'Hw 14', () => location.href="/hw_14.html");
 new Button(undefined, 'Lesson 15', () => location.href="/lesson_15.html");
-new Button(undefined, 'Lesson 16', () => location.href="/lesson_16.html");
 new Button(undefined, 'Hw 16', () => location.href="/hw_16.html");
+new Button(undefined, 'Lesson 17', () => location.href="/lesson_17.html");
+new Button(undefined, 'Hw 17', () => location.href="/hw_17.html");

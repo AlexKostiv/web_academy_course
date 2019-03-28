@@ -34,6 +34,8 @@ export class Request{
 		xhr.addEventListener('readystatechange', stateChangeHandler);
 	}
 
+
+
 	delete(url, id, onSuccess) {
 		const xhr = new XMLHttpRequest();
 		xhr.open('DELETE', `${url}/${id}`);

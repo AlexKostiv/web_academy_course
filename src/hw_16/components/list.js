@@ -1,8 +1,7 @@
 import { Request } from '../utils/request';
 
 import './list.scss';
-const prodURL = 'https://evening-dawn-11092.herokuapp.com/list';
-const devURL = 'httplocalhost:6001/list';
+const prodURL = 'https://evening-dawn-11092.herokuapp.com/comments';
 
 export class List {
 	constructor(target = document.querySelector('body')) {
@@ -16,7 +15,8 @@ export class List {
 	onSubmit(e) {
 		e.preventDefault();
 		const value = this._input.value;
-		const requestData = JSON.stringify({ title: value });
+		const value2 = this._textarea.value;
+		const requestData = JSON.stringify({ author: value, text: value2 });
 
 		this._request.post(
 			prodURL,
@@ -25,23 +25,40 @@ export class List {
 				const newItem = this.renderOne(JSON.parse(response));
 				this._ul.appendChild(newItem);
 				this._input.value = '';
+				this._textarea.value2 = '';
 			},
 			(status, response) => {
 				alert(response);
 			});
+		this._textarea.value = '';
 	}
 
 	render() {
 		this._form = document.createElement('form');
 		this._input = document.createElement('input');
+		this._textarea = document.createElement('textarea');
+		this._button = document.createElement('button');
+		this._ul = document.createElement('ul');
+
 		this._input.type = 'text';
-		this._form.appendChild(this._input);
+
 		this._form.addEventListener('submit', (e) => this.onSubmit(e));
 
-		this._ul = document.createElement('ul');
-		this._ul.classList.add('todos');
+
+		this._form.classList.add('form');
+		this._textarea.classList.add('form__textarea');
+
+		this._textarea.placeholder = 'Enter your message...';
+		this._input.placeholder = 'Enter your name...';
+
+		this._form.appendChild(this._input);
+		this._form.appendChild(this._textarea);
+		this._form.appendChild(this._button);
 		this._target.appendChild(this._form);
 		this._target.appendChild(this._ul);
+
+		this._button.textContent = 'Send';
+
 	}
 
 	renderList() {
@@ -57,25 +74,27 @@ export class List {
 		const btn = document.createElement('button');
 		const span = document.createElement('span');
 
+
 		const deleteHandler = () => {
 			this.removeTask(task.id);
 			btn.removeEventListener('click', deleteHandler);
 		}
 
 		btn.addEventListener('click', () => deleteHandler());
-		btn.textContent = 'delete';
+		btn.textContent = 'X';
 
-		span.textContent = task.title;
+		span.innerHTML = '<div class="author">' + task.author + '</div>'+ "<br>" + task.text;
 
 		li.appendChild(span);
 		li.appendChild(btn);
+		btn.classList.add('form__close_button');
+		li.classList.add('form__comment');
 
 		li.id = `task-${task.id}`;
 
 		if (task.completed) {
 			li.classList.add('task_completed')
 		}
-
 		return li;
 	}
 
@@ -89,6 +108,7 @@ export class List {
 	}
 
 	fetchData() {
+
 		this._request.get(
 			prodURL,
 			(response) => {
@@ -98,5 +118,7 @@ export class List {
 			(status, response) => {
 				alert('Something went wrong');
 			});
+
 	}
+
 }

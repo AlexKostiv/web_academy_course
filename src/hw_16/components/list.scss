@@ -1,5 +1,30 @@
-.todos {
 
+$border-radius: 5px;
+.form {
+  display: inline-flex;
+  flex-direction: column;
+
+  &__textarea {
+    resize: none;
+    margin-top: 5px;
+    min-height: 150px;
+    border-radius: $border-radius;
+  }
+  &__comment {
+    border: 1px dotted gray;
+    width: 300px;
+    word-wrap: break-word;
+    margin: 5px 0;
+    padding: 3px;
+    position: relative;
+    border-radius: $border-radius;
+  }
+  &__close_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
 }
 
 .task {
@@ -8,4 +33,17 @@
     text-decoration: line-through;
   }
 
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.author {
+  font-weight: bold;
+  color: #4c80df;
+}
+button {
+  border-radius: $border-radius;
+  color: #fff;
+  background-color: #4c80df;
 }
