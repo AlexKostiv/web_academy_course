@@ -9,21 +9,11 @@ export class Button extends React.Component {
         };
     }
 
-    clickHandler() {
-        const quantity = this.state.clickQuantity + 1;
-        this.setState({ clickQuantity: quantity });
-        this.props.onClick();
-    }
-
-
     render() {
-        const style = { backgroundColor: 'green' };
-        console.log('Render Button!!');
-        return <button
-            style={style}
-            className={this.props.className ? this.props.className + ' btn' : 'btn'}
+        return <li
+            className='btn'
             onClick={() => this.clickHandler()}>
-            {this.props.title} >>>>>>> {this.state.clickQuantity}
-        </button>
+            {this.props.title}
+        </li>
     }
 }

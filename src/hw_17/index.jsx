@@ -1,19 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from './components/Button.jsx';
-import { DropDown } from './components/DropDown.jsx';
 
-const countries = [
-    {
-        title: 'USA'
-    },
-    {
-        title: 'Canada'
-    },
-    {
-        title: 'Germany'
-    }
-];
+import './index.scss';
+
 
 class App extends React.Component {
     constructor(props) {
@@ -24,12 +14,18 @@ class App extends React.Component {
     }
     render() {
         return <div>
-            <h1>Hello world</h1>
-            <input type="text"/>
-            <Button title={this.state.title} onClick={ () => this.setState({title: 'Changed title'})} className="asdas"/>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur enim autem porro eligendi, odit sit nesciunt sequi illo culpa quia veritatis ex minima, blanditiis optio quod asperiores, accusantium necessitatibus et.</p>
-            <Button title='Hello' onClick={ () => console.log('CLICKED OTHER') }/>
-            <DropDown options={countries} placeholder="Select country..."/>
+                <nav className="navbar">
+                     <a className="logo" href="#"  >
+                         <img src="../../assets/images/image2.jpg" alt="Logo"/>
+                     </a>
+                     <ul>
+                          <Button title="So funktioniert's" onClick={ () => this.setState({title: 'Changed title'})} className="asdas"/>
+                          <Button title="Unser Sortiment" onClick={ () => this.setState({title: 'Changed title'})} className="asdas"/>
+                          <Button title="Unsere App" onClick={ () => this.setState({title: 'Changed title'})} className="asdas"/>
+                          <Button title="Häufige Fragen" onClick={ () => this.setState({title: 'Changed title'})} className="asdas"/>
+                     </ul>
+            </nav>
+
         </div>
     }
 }
