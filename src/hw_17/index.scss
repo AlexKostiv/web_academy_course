@@ -1,9 +1,35 @@
-
 .navbar {
+  background-color: white;
   display: flex;
-  justify-content: space-evenly;
+  position: relative;
+  justify-content: center;
   width: 100%;
   height: 60px;
-  background: #fff;
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    min-width: 650px;
+    height: 100%;
+    width: 70%;
+  }
+  &__list > * {
+    flex: 20% 1 1;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #15484c;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
 }
+
+
+
+
+

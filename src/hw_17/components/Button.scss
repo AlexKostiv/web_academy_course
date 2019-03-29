@@ -1,12 +1,12 @@
 .btn {
-    display: inline;
-    font-size: 1rem;
-    border: none;
-    color: #15484C;
-    cursor: pointer;
-    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #15484c;
     font-weight: bold;
-    padding: 0 25px;
-
-
+    cursor: pointer;
+    transition: color 0.3s linear;
+    &:hover {
+        color: #F08663;
+    }
 }

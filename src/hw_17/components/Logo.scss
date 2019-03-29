@@ -1,0 +1,18 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__cover {
+        padding: 0 20px 10px 20px;
+        margin-top: 9px;
+        background-color: white;
+        z-index: 1;
+
+    }
+
+}
+
+img {
+    width: 50px;
+    margin-top: 20px;
+}
