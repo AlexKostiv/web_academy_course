@@ -10,6 +10,17 @@ const baseConf = (_path) => {
     const VENDORS_NAME = 'vendors';
     const entry = {
         index: ['babel-polyfill', './src/index/index.js'],
+        'packman': ['./src/packman/packman.js'],
+        'sea_battle': ['./src/sea_battle/sea_battle.js'],
+        'hw_1': ['./src/hw_1/hw_1.js'],
+        'hw_2-3': ['./src/hw_2-3/hw_2-3.js'],
+        'page2': ['./src/hw_2-3/pages/page2.js'],
+        'page3': ['./src/hw_2-3/pages/page3.js'],
+        'hw_5_part_1': ['./src/hw_5_part_1/hw_5_part_1.js'],
+        'hw_5_part_2': ['./src/hw_5_part_2/hw_5_part_2.js'],
+        'hw_5_part_3': ['./src/hw_5_part_3/hw_5_part_3.js'],
+        'hw_5_part_4': ['./src/hw_5_part_4/hw_5_part_4.js'],
+        'hw_6': ['./src/hw_6/hw_6.js'],
         'lesson_11': ['./src/lesson_11/lesson_11.js'],
         'hw_11': ['./src/hw_11/hw_11.js'],
         'practice_5': ['./src/practice_5/practice_5.js'],
@@ -22,6 +33,8 @@ const baseConf = (_path) => {
         'hw_16': ['./src/hw_16/hw_16.js'],
         'lesson_17': ['./src/lesson_17/lesson_17.js'],
         'hw_17': ['./src/hw_17/hw_17.js'],
+        'spa': ['./src/spa/spa.js'],
+
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {

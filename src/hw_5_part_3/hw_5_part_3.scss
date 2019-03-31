@@ -1,0 +1,78 @@
+body {
+	background-image: url(../../assets/images/hw_5/menu-2-background.jpg);
+	margin-top: 30px;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 480px;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.item {
+	background-color: rgba(0,0,0,.3);
+	flex: 1 1 25%;
+	margin: 10px;
+	font-size: 160px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.horisontal_line {
+	flex-basis: 100%;
+	font-size: 36px;
+	background: none;
+}
+.fa-sign-out-alt {
+	opacity: .4;
+	color: #000;
+}
+.fa-clipboard-list,
+.fa-address-book,
+.fa-plus,
+.fa-marker{
+	padding: 40px 0;
+}
+
+.fa-sign-out-alt:hover{
+	color: #fff;
+	opacity: 1;
+}
+.element:hover > i {
+	opacity: .5;
+	color: #000;
+}
+.item.vertical-line {
+	position: relative;
+	margin-right: 50px;
+}
+.item.vertical-line:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: -30px;
+	height: 100%;
+	width: 1px;
+	background-color: #fff;
+}
+.item.horisontal_line {
+	position: relative;
+	margin: 1px 0;
+}
+.horisontal_line:after,
+.horisontal_line:before {
+	content: '';
+	position: absolute;
+	width:  300px;
+	height: 1px;
+	top: 20px;
+	background-color: #fff;
+}
+.horisontal_line:after {
+	right: 12px;
+}
+.horisontal_line:before {
+	left: 12px;
+}
+

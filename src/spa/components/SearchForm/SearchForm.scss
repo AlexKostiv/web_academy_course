@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+$form-bg-color: #eee;
+
+.search-form {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    background-color: $form-bg-color;
+    border: 1px solid $form-bg-color;
+    border-radius: 22px;
+    &__input {
+        flex-grow: 1;
+        padding: 0.7rem 1rem;
+        padding-left: 0;
+        font-size: 0.9rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    &__button {
+        font-size: 1rem;
+        border: none;
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        background: transparent;
+        outline: none;
+    }
+}

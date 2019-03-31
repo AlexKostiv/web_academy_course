@@ -1,0 +1,32 @@
+
+.join_us {
+  max-width:400px;
+  margin: 0 auto;
+}
+form {
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Neucha', cursive;
+}
+.field {
+	width: 300px;
+	height: 25px;
+}
+textarea {
+  width: 300px;
+	height: 150px;
+	resize: none;
+}
+input[type=file] {
+  margin: 0 auto;
+  width: 200px;
+}
+.select,
+.radio,
+label {
+	font-weight: bold;
+}
+input[type=submit] {
+	margin: 20px 0;
+}

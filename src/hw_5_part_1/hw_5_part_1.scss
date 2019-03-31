@@ -1,0 +1,33 @@
+body {
+	background-color: #B8BAC6;
+}
+.gallery {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	max-width: 1050px;
+	margin: 5% 5% 5% auto;
+}
+.flip-page {
+	width: 320px;
+	float: left;
+	margin: 50px -120px;
+	transform: rotateX(1deg) rotateY(-60deg) rotateZ(-6deg) skewX(-7deg) translate(30px);
+	transition: 1s;
+}
+.flip-page img {
+	width: 100%;
+	height: auto;
+}
+.flip-page:nth-child(odd) {
+	margin-top: 5px;
+}
+.flip-page:hover {
+	margin-right: 50px;
+	transform: rotate(0);
+	transition: 1s;
+}
+
+

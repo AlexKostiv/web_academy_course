@@ -1,0 +1,1 @@
+import './hw_5_part_2.scss';

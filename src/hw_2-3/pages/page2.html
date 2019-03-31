@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+     <title>Анкета</title>
+</head>
+<body>
+	<header>
+		<img class="logo" src="../../assets/images/hw_2-3/2.png" alt="Logo" >
+		<h1>Туристичний клуб ТУРБАТ</h1>
+	</header>
+    <br>
+    <main>
+        <section class="join_us">
+          <form action="page3.html" method="get">
+             <h2>Заповніть анкету учасника</h2>
+             <div class="block-field">
+                  <label for="name">Прізвище, ім'я та по батькові</label>  
+                  <input class="field" type="text" id="name" placeholder="Пупкін Іван Іванович" required>
+             </div>
+             <div class="block-field">
+                  <span class="radio">Виберіть Вашу Стать:</span>
+                  <br>
+                  <label for="male">Чоловік</label>
+                  <input type="radio" name="gender" id="male" value="male">
+                  <label for="female">Жінка</label>
+                  <input type="radio" name="gender" id="female" value="female">
+             </div>           
+             <div class="block-field">
+                  <label for="date">Дата народження:</label>
+                  <input class="field" id="date" min="1940-01-01" max="2018-01-01" required>
+             </div>            
+             <div class="block-field">
+                  <label for="phone">Контактний телефон:</label> 
+                  <input class="field" type="tel" id="phone" maxlength="10" placeholder="(099) 000-00-00" required>
+             </div>
+             <div class="block-field">
+                  <label for="email">Електронна адреса:</label>
+                  <input class="field" id="email" placeholder="pupkin@gmail.com" required>
+             </div>
+             <div class="block-field">
+                  <span class="select">Виберіть Ваш рід зайнятості:</span>
+                  <br>
+                  <select class="field" required>
+                    <option value="volvo">Працюю</option>
+                    <option value="saab">Студент</option>
+                    <option value="mercedes">Навчаюсь та працюю</option>
+                    <option value="audi">Безробітний</option>
+               </select>
+          </div>
+          <div class="block-field">
+             <label for="file">Завантажте Ваше фото:</label>
+             <br>
+             <input accept="image/*,.pdf,.jpg,.jpeg,.png,.bmp" id="file">
+        </div>
+        <div class="block-field">
+             <label for="message">Коротко про себе:</label>
+             <textarea id="message"></textarea>
+        </div>
+        <div class="block-field">
+             <input type="checkbox" required="checked">
+             <span>Я даю згоду на обробку своїх персональних данних</span>
+        </div>            
+        <input type="Submit"  value="Відправити">
+   </form>
+</section>
+</main>
+<br>
+<footer>
+   <p>© 2019 Oleksandr Kostiv.  All rights reserved.</p>
+</footer>
+</body>
+</html>
