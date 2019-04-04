@@ -3,16 +3,18 @@
     align-items: center;
     justify-content: center;
     &__cover {
-        padding: 0 20px 10px 20px;
+        padding: 0 20px 12px 20px;
         margin-top: 9px;
         background-color: white;
         z-index: 1;
-
+    }
+    &__bg {
+        background-image: url('../../../assets/images/hw_17/miacar_logo.png');
+        background-size: cover;
+        height: 70px;
+        width: 50px;
+        margin-top: 27px;
     }
 
 }
 
-img {
-    width: 50px;
-    margin-top: 20px;
-}

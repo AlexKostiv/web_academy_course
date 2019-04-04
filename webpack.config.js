@@ -1,7 +1,7 @@
 const path = require('path');
-const baseConfig = require('./config/base');
-const devConfig = require('./config/dev');
-const prodConfig = require('./config/prod');
+const baseConfig = require('./src/hw_1/config/base');
+const devConfig = require('./src/hw_1/config/dev');
+const prodConfig = require('./src/hw_1/config/prod');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 

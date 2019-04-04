@@ -14,8 +14,6 @@ const baseConf = (_path) => {
         'sea_battle': ['./src/sea_battle/sea_battle.js'],
         'hw_1': ['./src/hw_1/hw_1.js'],
         'hw_2-3': ['./src/hw_2-3/hw_2-3.js'],
-        'page2': ['./src/hw_2-3/pages/page2.js'],
-        'page3': ['./src/hw_2-3/pages/page3.js'],
         'hw_5_part_1': ['./src/hw_5_part_1/hw_5_part_1.js'],
         'hw_5_part_2': ['./src/hw_5_part_2/hw_5_part_2.js'],
         'hw_5_part_3': ['./src/hw_5_part_3/hw_5_part_3.js'],

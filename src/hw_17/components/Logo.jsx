@@ -9,9 +9,11 @@ export class Logo extends React.Component {
     render() {
         return <li className='logo'>{this.props.title}
             <a href="#">
-                <span className='logo__cover'>
-                    <img src="../../../assets/images/miacar_logo.png" alt="Logo"/>
-                </span>
+                <div className='logo__cover'>
+                    <div className='logo__bg'>
+
+                    </div>
+                </div>
             </a>
         </li>
     }
