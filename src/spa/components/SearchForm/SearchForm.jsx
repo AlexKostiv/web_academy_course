@@ -20,7 +20,7 @@ class SearchForm extends React.Component {
 
     onChange(e) {
         const searchValue = e.currentTarget.value;
-        this.setState({searchValue})
+        this.setState({ searchValue })
     }
 
     render() {
@@ -33,11 +33,12 @@ class SearchForm extends React.Component {
                 className="search-form__input"
                 onChange={this.onChange}
                 value={this.state.searchValue}
-                placeholder="Search..."/>
+                placeholder="Search..." />
         </form>
     }
 }
-// here we get history object from react route
+
+// Here we take history object from react router
 const SearchFormWithRouter = withRouter(SearchForm);
 
-export {SearchFormWithRouter  as SearchForm}
+export { SearchFormWithRouter as SearchForm }

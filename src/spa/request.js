@@ -1,6 +1,5 @@
 export class Request {
-
-    constructor() {
+    constructor(baseUrl) {
 
     }
 
@@ -10,10 +9,10 @@ export class Request {
 
         xhr.open('GET', url);
 
-        for (let key in headers) {
+        for(let key in headers) {
             xhr.setRequestHeader(key, headers[key])
         }
-
+        
         xhr.send();
 
         const stateChangeHandler = () => {
@@ -63,5 +62,4 @@ export class Request {
 
         xhr.addEventListener('readystatechange', stateChangeHandler);
     }
-
 }
